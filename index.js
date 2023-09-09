@@ -99,7 +99,7 @@ const result = ()=>{
   if (aware.length == 0) {
     lastbox.style.height = `70vw`
   } else {
-  let widthp = aware.length * 25
+  let widthp = aware.length * 20
   let swidthp = widthp.toString()
   console.log(typeof widthp)
   lastbox.style.height = `${swidthp}vh`
@@ -114,7 +114,7 @@ const result = ()=>{
 const questionPlease = () =>{
    let i = 0
   do {
-    random = Math.floor(Math.random()*10)
+    random = Math.floor(Math.random()*14)
   } while (choosen.includes(random) && choosen.length < 10);
   questionBox.innerHTML = questions[random].question
   newoptions.forEach((optionP)=>{
@@ -140,4 +140,4 @@ const answer = ()=>{
   }
   choosen.push(random)
   questionPlease()
-  }
+    }
