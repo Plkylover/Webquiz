@@ -99,7 +99,7 @@ const result = ()=>{
   if (aware.length == 0) {
     lastbox.style.height = `70vw`
   } else {
-  let widthp = aware.length * 20
+  let widthp = aware.length * 30
   let swidthp = widthp.toString()
   console.log(typeof widthp)
   lastbox.style.height = `${swidthp}vh`
